@@ -1,0 +1,34 @@
+# Segreti
+.env
+.env.*
+!.env.example
+# Python e strumenti
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+coverage.xml
+# Dati, pesi e output runtime: conservare solo manifest e report approvati
+/data/
+/models/
+/logs/
+/artifacts/
+.cache/
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+# Build
+node_modules/
+/build/
+/dist/
+*.egg-info/
+# Sistema
+Thumbs.db
+Desktop.ini
+.DS_Store
