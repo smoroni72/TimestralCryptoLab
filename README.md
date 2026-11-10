@@ -2,7 +2,7 @@
 
 Laboratorio quantitativo per verificare modelli previsionali crypto e, successivamente, strategie autonome **esclusivamente PAPER con capitale virtuale**.
 
-> Stato: documentazione, struttura e piano di validazione. Nessun bot, simulatore, dashboard o benchmark implementato in questa consegna. Nessun risultato di Timestral misurato sul progetto.
+> Stato: prima attività M1 implementata, limitatamente alla pipeline OHLCV storica. Nessun bot, simulatore, dashboard o benchmark previsionale. Nessuna installazione o misura di Timestral.
 
 ## Prima attività tecnica
 
@@ -25,7 +25,7 @@ Remote ufficiale: https://github.com/smoroni72/TimestralCryptoLab
 
 Directory Windows ufficiale: `C:\Users\smoro\Documents\Codex\TimestralCryptoLab`.
 
-Work opera sullo stesso remote; Codex usa il checkout Windows. La sincronizzazione avviene con commit, fetch/pull e push, non tramite accesso diretto di Work al disco Windows. Vedere [guida sincronizzazione](docs/wiki/windows-codex-github.md). La verifica sul PC rimane da effettuare da Stefano.
+Work opera sullo stesso remote; Codex usa il checkout Windows. La sincronizzazione avviene con commit, fetch/pull e push, non tramite accesso diretto di Work al disco Windows. Vedere [guida sincronizzazione](docs/wiki/windows-codex-github.md). Directory, remote e commit iniziale sono stati verificati sul PC in questa attività; nessun push eseguito.
 
 ## Struttura
 
@@ -42,14 +42,14 @@ TimestralCryptoLab/
   reports/          # report approvati e risultati sintetici versionati
 ```
 
-Le directory contengono soltanto README descrittivi. Dati grezzi, cache, pesi, database e segreti non vanno in Git. Manifest, checksum, protocolli e report riassuntivi rendono riproducibili gli esperimenti.
+`src/timestral_crypto_lab` contiene la pipeline storica e `tests/test_data.py` i test offline. Le altre componenti applicative rimangono pianificate. Dati grezzi, Parquet, cache, pesi, database e segreti non vanno in Git.
 
 ## Stack candidato
 
-Python 3.12, NumPy/PyTorch per ricerca; pytest per test. Per il successivo MVP: SQLite, FastAPI/Uvicorn e HTML/CSS/JavaScript responsive. Nessuna dipendenza è ancora fissata o installata dal repository; lo stack è da verificare su Windows nella M1.
+Pipeline corrente: Python 3.12, PyArrow 23.0.1 e unittest. Il restante stack (NumPy/PyTorch, pytest, futuro MVP) rimane candidato e non è installato da questa attività.
 
 ## Avvio e test
 
-Non esistono ancora comandi di avvio dell'app o test applicativi. Non usare codice proveniente da prototipi esterni a questo repository come componente già approvato. Dopo la revisione documentale si potrà autorizzare la sola implementazione del benchmark M1.
+Installazione PowerShell, acquisizione completa, ripresa e smoke test sono nella [guida pipeline OHLCV](docs/wiki/data-pipeline.md). Verifiche effettive e limiti sono nel [report](reports/m1-data-pipeline.md). Il checkout Windows è stato verificato al commit di partenza `23b099f449647d016db19e1b272e5ced520efa6b`; questa attività resta locale, senza push. Il benchmark previsionale richiede una successiva attività.
 
 PAPER permanente, nessun ordine reale eseguibile e nessuna richiesta di credenziali finanziarie sono vincoli della prima versione.

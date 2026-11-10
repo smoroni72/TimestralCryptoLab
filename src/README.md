@@ -1,3 +1,5 @@
 # src
 
-Futuro codice applicativo modulare. Nessun bot implementato. Dopo M1: contratti dati/previsioni, strategia, rischio, esecuzione virtuale e dashboard con responsabilità separate.
+`timestral_crypto_lab/data.py` implementa la sola pipeline OHLCV storica M1.
+Comandi e contratti nella [guida](../docs/wiki/data-pipeline.md).
+Forecast, benchmark e runtime paper rimangono da implementare.

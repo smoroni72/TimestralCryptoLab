@@ -1,6 +1,6 @@
 # Piano test e verifica
 
-Stato: piano, nessun test applicativo presente o eseguito nel repository.
+Stato 10 novembre 2026: test della sola pipeline OHLCV presenti in `tests/test_data.py`, eseguibili con `python -m unittest discover -s tests -v`. Suite deterministica senza rete; [evidenze di esecuzione](../../reports/m1-data-pipeline.md). Il resto di questa pagina è piano per attività successive.
 
 ## Documentazione M0
 

@@ -17,6 +17,8 @@ Accettazione:
 
 ## M1 — Validazione offline Timestral (prima milestone tecnica)
 
+Stato 10 novembre 2026: implementata la sola pipeline storica OHLCV con test offline e piccolo smoke reale; [evidenze](reports/m1-data-pipeline.md). Dataset completo, congelamento del protocollo, inferenza e benchmark rimangono da eseguire. Nessun gate M1 complessivo è superato.
+
 Ambito: OHLCV storici BTC/USDT e SOL/USDT spot; 15m/1h; Timestral e baseline; protocollo cronologico, holdout e misure hardware. Nessun trading automatico o simulazione di portafoglio.
 
 Accettazione:

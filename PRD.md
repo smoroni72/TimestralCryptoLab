@@ -12,7 +12,7 @@ L'utente conosce lo sviluppo software ma ha esperienza di trading limitata: dash
 
 ## 2. Perimetro corrente e non obiettivi
 
-**Consegna corrente:** documenti, struttura Git, piano offline M1 e sincronizzazione. Nessun trading automatico, benchmark eseguito o componente applicativo incluso.
+**Consegna corrente (10 novembre 2026):** documenti e prima attività M1 di acquisizione, normalizzazione e validazione OHLCV implementata. Nessun trading automatico o benchmark previsionale eseguito. Dettagli nella [guida pipeline](docs/wiki/data-pipeline.md).
 
 **Prima milestone tecnica M1:** installabilità e inferenza Timestral, dati storici OHLCV BTC/USDT e SOL/USDT, benchmark cronologico con baseline, metriche previsionali e misure hardware. Nessun ordine, P&L o bot necessario.
 
@@ -107,4 +107,4 @@ Le milestone successive richiedono codice funzionante e test significativi. Non 
 
 ## 10. Questioni aperte
 
-Date e fonte dati proposte da confermare prima del download; contaminazione da pretraining non escludibile senza evidenze; compatibilità Windows e costo VPS da misurare; coppia/FX e commissioni del futuro MVP da decidere; policy di ripresa e uscite pendenti da testare M2. Nessun punto richiede credenziali di trading.
+Fonte Binance Public Data spot confermata per la pipeline e date proposte conservate; snapshot completo da acquisire e congelare. Contaminazione da pretraining non escludibile senza evidenze; compatibilità Windows del modello e costo VPS da misurare; coppia/FX e commissioni del futuro MVP da decidere; policy di ripresa e uscite pendenti da testare M2. Nessun punto richiede credenziali di trading.

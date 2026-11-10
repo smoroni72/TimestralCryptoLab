@@ -1,25 +1,24 @@
 # Stato del progetto
 
-Aggiornato: 28 ottobre 2026. Stato applicativo: **non implementato**.
+Aggiornato: 10 novembre 2026. Implementata soltanto la pipeline dati storici M1.
 
 | Area | Stato ed evidenza |
 | --- | --- |
-| Repository ufficiale | smoroni72/TimestralCryptoLab; inizialmente vuoto alla verifica Git |
-| Connessione GitHub | Account con pull/push dichiarati; creazione README e .gitignore tramite integrazione riuscita |
-| Client Git nel terminale Work | Clone in lettura riuscito; push via HTTPS non autenticato. Pubblicazione tramite integrazione GitHub |
-| Documentazione e directory | Predisposte in questa fase; revisione utente pendente |
-| Windows / Codex locale | Non verificati da Work; controllare directory, remote e SHA dal PC |
-| Round trip Codex → GitHub → Work | Da verificare con successiva modifica documentale autorizzata |
-| Timestral | Fonti ufficiali consultate; nessuna inferenza o misura hardware eseguita nel progetto |
-| Dati BTC/USDT e SOL/USDT | Piano storico definito; nessun dataset acquisito/validato nel repository |
-| Benchmark/baseline/test applicativi | Da sviluppare; nessun risultato quantitativo disponibile |
+| Repository ufficiale | smoroni72/TimestralCryptoLab; branch main, partenza pulita da 23b099f449647d016db19e1b272e5ced520efa6b |
+| Windows / Codex locale | Directory, branch, remote e SHA verificati; Python 3.12.10, PyArrow 23.0.1 |
+| GitHub | Nessuna pubblicazione autorizzata in questa attività; commit soltanto locale |
+| Pipeline dati | Binance spot, cache/ripresa/checksum, UTC ms/us, Parquet, controlli e manifest implementati |
+| Test dati | Suite offline deterministica e piccolo smoke reale; [evidenze](../../reports/m1-data-pipeline.md) |
+| Timestral | Non installato; nessuna inferenza o misura hardware |
+| Dataset M1 completo | Non scaricato; periodo proposto invariato e configurabile |
+| Benchmark/baseline | Da sviluppare; nessun risultato previsionale disponibile |
 | Bot, rischio, execution, dashboard | Da sviluppare dopo le milestone/gate; nessuna implementazione inclusa |
 | Componenti simulati eseguibili | Nessuno |
 | Trading reale | Escluso dalla prima versione e dalla roadmap attuale |
 
 ## Prossimo passo
 
-Verificare pubblicazione, aggiornare il checkout Windows, far leggere AGENTS.md a Codex e confrontare lo SHA. Poi revisionare/approvare protocollo e stack M1, prima di implementare il solo benchmark offline.
+Revisionare la [pipeline OHLCV](data-pipeline.md) e congelare lo snapshot dati. Benchmark e integrazione Timestral richiedono attività successive. M1 complessiva ancora aperta, split e parametri invariati.
 
 ## Regola di aggiornamento
 

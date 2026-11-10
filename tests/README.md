@@ -1,3 +1,11 @@
 # tests
 
-Futuri test unitari e di integrazione. Attualmente nessun test applicativo. Piano in ../docs/wiki/testing.md; fixture deterministiche e niente rete obbligatoria nella suite unitaria.
+`test_data.py`: suite unittest offline con piccole fixture ZIP temporanee,
+HTTP simulato per la ripresa e verifiche Parquet/manifest. Eseguire:
+
+```powershell
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+```
+
+Smoke reale separato, mai incluso nella suite: [guida](../docs/wiki/data-pipeline.md).
+Il resto del [piano test](../docs/wiki/testing.md) riguarda attività successive.

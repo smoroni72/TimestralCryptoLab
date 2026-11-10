@@ -2,6 +2,8 @@
 
 Versione 0.1 · 28 ottobre 2026 · **Piano proposto, non eseguito.** Nessun risultato o comando di benchmark è già disponibile. Prima dell'esecuzione fissare configurazione e revisioni in un manifest versionato.
 
+Aggiornamento 10 novembre 2026: autorizzata e implementata esclusivamente la [pipeline OHLCV](data-pipeline.md), con periodo proposto invariato e candele native per 15m e 1h. Eseguito solo un piccolo smoke dati, non il dataset completo né il benchmark. Split, contesti, orizzonti, metriche e budget restano invariati e da congelare per il benchmark.
+
 ## 1. Domande e separazione dei gate
 
 1. Tecnico: installazione e inferenza riproducibili su Windows/CPU? Quanto costano RAM e tempo?

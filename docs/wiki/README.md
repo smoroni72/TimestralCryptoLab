@@ -11,4 +11,4 @@ Questa wiki è contenuta in `docs/wiki` e versionata nello stesso repository del
 5. [Decisioni architetturali](decisions.md), [tracciabilità](traceability.md).
 6. [Windows, Codex e GitHub](windows-codex-github.md), [stato](status.md).
 
-Tutto il comportamento applicativo descritto è pianificato. La prima attività tecnica da autorizzare è il benchmark offline, non l'avvio di un bot.
+La sola [pipeline storica OHLCV](data-pipeline.md) è implementata e testata. Benchmark previsionale e resto del comportamento applicativo rimangono pianificati; nessun bot avviato.

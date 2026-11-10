@@ -1,6 +1,6 @@
 # Dati, qualità e unità
 
-Stato: contratti e policy proposti, non codice implementato.
+Stato: contratto OHLCV storico implementato nella [pipeline dati](data-pipeline.md), con schema Parquet e manifest v1. I contratti runtime e previsionali rimangono proposti.
 
 ## Dataset M1
 

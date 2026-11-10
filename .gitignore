@@ -14,6 +14,8 @@ htmlcov/
 coverage.xml
 # Dati, pesi e output runtime: conservare solo manifest e report approvati
 /data/
+*.parquet
+*.zip.part
 /models/
 /logs/
 /artifacts/

@@ -1,6 +1,6 @@
 # Architettura
 
-Versione 0.1 · Stato: progetto da validare, non implementazione.
+Versione 0.1 · Aggiornamento 10 novembre 2026: implementata soltanto la pipeline Market Data storica M1; le altre componenti rimangono progetto da validare.
 
 ## Impostazione
 
@@ -20,7 +20,7 @@ La M1 è un harness offline isolato dal futuro runtime paper. Condivide i contra
 | Packaging | pyproject e lock delle dipendenze | Da creare con l'ambiente reale, nessun lock fittizio |
 | VPS futuro | Docker, volume locale persistente | Packaging dopo slice M2; hardening e deployment M7 |
 
-Queste scelte sono proposte, non requisiti già approvati. Non sono installate da questa consegna.
+Queste scelte restano proposte salvo la pipeline dati: Python 3.12, PyArrow 23.0.1 per Parquet, libreria standard per rete/CSV e unittest per evitare dipendenze di test aggiuntive. Packaging con setuptools fissato. Contratti e comandi implementati nella [guida dati](docs/wiki/data-pipeline.md). Nessun componente del modello o runtime paper installato.
 
 ## Moduli
 
